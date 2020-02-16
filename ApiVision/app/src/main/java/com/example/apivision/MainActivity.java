@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         imagencargar=(ImageView)findViewById(R.id.imageView2);
         mOptionButton = (Button) findViewById(R.id.btnfoto);
         Vision.Builder visionBuilder = new Vision.Builder(new NetHttpTransport(), new AndroidJsonFactory(), null);
-        visionBuilder.setVisionRequestInitializer(new VisionRequestInitializer("AIzaSyCV_ADpVQp5_K1CQ98gc6KeOVq5p1sjqKQ"));
+        visionBuilder.setVisionRequestInitializer(new VisionRequestInitializer("Api Key"));
         vision = visionBuilder.build();
 
         mRlView = (RelativeLayout) findViewById(R.id.rl_view);
